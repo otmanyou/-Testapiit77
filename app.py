@@ -64,4 +64,4 @@ async def check_code():
 
 # تشغيل التطبيق
 if __name__ == "__main__":
-    app.run
+    app.run()
