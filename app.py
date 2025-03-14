@@ -64,4 +64,7 @@ async def check_code():
     valid = await is_valid_key(code)
     return jsonify({"valid": valid})
 
-# لا حاجة لتشغيل الخادم يدويًا عند النشر على Vercel
+# تشغيل التطبيق
+if __name__ == "__main__":
+    loop = asyncio.get_event_loop()
+    app.run(debug=True, use_reloader=False)
